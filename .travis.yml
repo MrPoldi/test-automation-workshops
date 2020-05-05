@@ -13,3 +13,5 @@ before_script:
   - npm i @babel/compat-data@7.8.0
 script:
 - ng build --prod --base-href https://bamanczak.github.io/pesel/
+- ng lint
+- ng test --watch=false --browsers=ChromeHeadless
