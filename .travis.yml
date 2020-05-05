@@ -12,13 +12,13 @@ before_script:
   - npm install -g @angular/cli
   - npm i @babel/compat-data@7.8.0
 script:
-- ng build --prod --base-href https://bamanczak.github.io/pesel/
+- ng build --prod --base-href https://mrpoldi.github.io/test-automation-workshops/
 - ng lint
 - ng test --watch=false --browsers=ChromeHeadless
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/pesel
+  local_dir: dist/test-automation-workshops
   on:
     branch: master
